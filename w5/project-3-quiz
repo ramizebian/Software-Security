@@ -1,0 +1,35 @@
+1. How many iterations does it take the fuzzer to find the bug (i.e., record a crash)? What is the string that it discovers crashes the program?
+
+ans: 0
+
+2. how many iterations?
+
+ans: 1000
+
+3. Name one symbolic variable that was set in the path condition identified by KLEE that crashes wisdom-alt2
+
+ans: buf
+
+4. Name another symbolic variable set in the path condition identified by KLEE that crashes wisdom-alt2.
+
+ans: r
+
+5. Which symbolic variables were involved (AAAAAA and BBBBBB in the above)?
+
+ans: buf, \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00
+
+6. What was their contents (XXXXXXXX in the above)?
+
+ans: \x00\x00\x00\x00
+
+7. What was the data (the XXXXetc. part, not including any \x00\x00 parts, if any) for the program object?
+
+ans: sddwddddssssddwwww
+
+8. If you run the symbolic maze program so that it finds all solutions, not just one, how many are there?
+
+ans: 4
+
+9. There was a bug in the maze program that allows the player to walk through walls. What line in maze-sym.c is the bug on? (If there are multiple lines, pick one of them.)
+
+ans: 113
