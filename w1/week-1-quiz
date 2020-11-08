@@ -2,9 +2,9 @@ Week 1 quiz
 
 1. Three of the following are classic security properties; which one is not?
 
-Availability (+)
+Availability 
 Confidentiality
-Correctness
+Correctness (+)
 Integrity
 
 2. What was the first buffer overflow attack?
@@ -221,7 +221,7 @@ Heartbleed attacks the anti-virus scanner itself
 
 15. An integer overflow occurs when
 
-an integer expression's result "wraps around"; instead of creating a very large number, a very small (or negative) number ends up getting created
+an integer expression's result "wraps around"; instead of creating a very large number, a very small (or negative) number ends up getting created (+)
 an integer is used as if it was a pointer
 an integer is used to access a buffer outside of the buffer's bounds
-there is no more space to hold integers in the program (+)
+there is no more space to hold integers in the program 
