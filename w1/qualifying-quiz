@@ -18,7 +18,7 @@ All elements are initialized to 0
 This fragment will not compile (-)
 This fragment always evaluates to 0 (assuming it doesn't crash) (-)
 This fragment always evaluates to 1 (assuming it doesn't crash) (-)
-This fragment's result depends on the compiler and architecture
+This fragment's result depends on the compiler and architecture (+)
 This fragment will always crash
 
 3. Suppose you are compiling for a 32-bit platform and sizeof(int) == 4. Which one of the following is equivalent to c[b] if c is of type int* and b is of type int?
@@ -56,16 +56,16 @@ printf("%s\n", blah+4);
 What happens if we try to compile and run this code?
 
 The program outputs "buzz" (+)
-The program outputs a blank line depending on the size of pointers
+The program outputs a blank line depending on the size of pointers (-)
 The program is illegal C and may not compile (-)
-The program outputs "fizz"
+The program outputs "fizz" (-)
 
 6. Which of the following are true of memory returned via the malloc function? Check all that apply.
 
 It must be manually released by the programmer (+)
-The memory is zero-initialized
-It is write-only
-It is automatically released by the operating system when the pointer to which the memory is assigned goes out of scope
+The memory is zero-initialized (-)
+It is write-only (-)
+It is automatically released by the operating system when the pointer to which the memory is assigned goes out of scope (-)
 
 7. Consider the following code
 
@@ -92,8 +92,8 @@ int main(int argc, char *argv[]) {
 This program could crash at position 3
 This program could crash at 2 and 3 (+)
 This program could crash at 1 and 2 (-)
-This program could crash at position 2
-This program could crash at position 1
+This program could crash at position 2 (-)
+This program could crash at position 1 (-)
 This program could crash at all 3 positions (-)
 
 8. Which of the following are true statements about the program stack?
@@ -149,41 +149,41 @@ Assuming we #define N and M to be positive integers, and the calls to malloc() s
 
 This program crashes (-)
 This program outputs a matrix with at least one element being 7 (-)
-This program outputs a random NxM matrix
+This program outputs a random NxM matrix (-)
 This program outputs a zero NxM matrix (+)
-This is not a valid C program
+This is not a valid C program (-)
 
 11. What is TCP?
 
-It is connectionless
-It ensures data confidentiality
+It is connectionless (-)
+It ensures data confidentiality (-)
 It is a protocol that supports reliable data transfer on the Internet (+)
-It is a protocol often implemented on top of HTTP
+It is a protocol often implemented on top of HTTP (-)
 
 12. What is PHP? Pick one.
 
-The acronym for a coding standard
-A programming language often used to implement network switches
-A network protocol
+The acronym for a coding standard (-)
+A programming language often used to implement network switches (-)
+A network protocol (-)
 A programming language often used to implement web sites (+)
 
 13. Which of the following statements about HTML are true?
 
 Web browsers render HTML content served by web sites (+)
-HTML is a kind of URL
+HTML is a kind of URL (-)
 HTML documents have tags that identify different sorts of data (+)
 HTML is a text-based format (as opposed to a binary format) (+)
 
 14. What is gcc?
 
-All of the above
-An interpreter
-A virtual machine
+All of the above (-)
+An interpreter (-)
+A virtual machine (-)
 A compiler (+)
 
 15. The shell command cd; ls *.xml
 
-Will list all files ending in the xml suffix in the previous working directory
-Will list the file *.xml in the current directory
+Will list all files ending in the xml suffix in the previous working directory (-)
+Will list the file *.xml in the current directory (-)
 Will list all files ending in the xml suffix in user's home directory (+)
-Will list all of the files listed in the given XML file
+Will list all of the files listed in the given XML file (-)
